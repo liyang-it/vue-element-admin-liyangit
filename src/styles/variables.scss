@@ -1,0 +1,41 @@
+// 定义 菜单的背景颜色、字体颜色，在 sidebar.scss 中使用
+// base color
+$blue:#324157;
+$light-blue:#3A71A8;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #30B08F;
+
+
+// 菜单字体颜色
+$menuText:#f7fbff;
+// 菜单字体选中颜色
+$menuActiveText: #f7fbff;
+// 菜单目录字体选中颜色
+$subMenuActiveText:#f7fbff; // https://github.com/ElemeFE/element/issues/12951
+// 菜单背景颜色
+$menuBg:Transparent; // 设置菜单组件为透明颜色，不使用这个，使用css样式修改
+// 菜单悬浮颜色
+$menuHover:#89aed1;
+// 菜单目录背景颜色
+$subMenuBg:Transparent; // 设置菜单组件为透明颜色，然后使用css样式修改
+// 菜单目录悬浮颜色
+$subMenuHover:#708da8;
+// 菜单宽度
+$sideBarWidth: 240px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
