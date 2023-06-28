@@ -2,24 +2,20 @@
 
 ## 概要
 
-[vue-element-admin](https://panjiachen.github.io/vue-element-admin) は管理画面のフロントエンドのインタフェースで、[vue](https://github.com/vuejs/vue) と [element-ui](https://github.com/ElemeFE/element)を使っています。i18nの多言語対応、可変ルート、権限、典型的なビジネスアプリテンプレートであり、豊富なコンポーネントを提供しています。素早くビジネス用の管理画面の現型を構築に役立ちます。
+**vue-element-admin-liyangit**は、vue-element-adminに基づいているバックエンド管理フロントエンドフレームワークです。これは、[vue-element-admin](https://panjiachen.github.io/vue-element-admin)に基づいていて、何の機能も変更していません。元のプロジェクトの基本スタイルを変更しただけです。バックエンドの動的なメニュー権限ケースソリューション、PWAアプリケーションサポート、機能コードコメントの説明、不要な機能を削除して、あなたが**vue2*のみをサポートしていて、vue-element-adminをすぐに手に入れることができます。
 
-- [デモページ](https://panjiachen.github.io/vue-element-admin)
+* 元のプロジェクトの基本スタイルを修正
+* バックエンドおよびバックエンドの動的メニュー権限ケースソリューション
+* PWAアプリケーションのサポート
+* 機能コードのコメントの説明
+* 無駄なエネルギーを削除しました
+* ビッグデータ表プラグイン
 
-- [ドキュメント](https://panjiachen.github.io/vue-element-admin-site/)
+## プレビュー
+- [オンラインプレビュー](https://liyang-it.github.io/vue-admin-page)
 
-- [Gitter](https://gitter.im/vue-element-admin/discuss)
-
-- [Donate](https://panjiachen.gitee.io/vue-element-admin-site/zh/donate)
-
-- [Wiki](https://github.com/PanJiaChen/vue-element-admin/wiki)
-
-- おすすめシンプルテンプレート: [vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)
-- デスクトップバージョン: [electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
-- Typescriptバージョン: [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (感謝: [@Armour](https://github.com/Armour))
-- [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
-
-
+- [vue-element-admin 公式ドキュメント](https://github.com/PanJiaChen/vue-element-admin)
+  
 ## Getting started
 
 ```bash
