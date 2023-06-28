@@ -16,7 +16,7 @@ English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Spa
 
 * Big data table plugin
 
-  
+  `--`
 - [Online preview](https://liyang-it.github.io/vue-admin-page)
 
 - [vue-element-admin Official document](https://github.com/PanJiaChen/vue-element-admin) 
