@@ -11,6 +11,7 @@
  * 删除了无用功能
  * 大数据表格插件
 
+## 预览
 - [在线预览](https://liyang-it.github.io/vue-admin-page)
 
 - [vue-element-admin 官方文档](https://github.com/PanJiaChen/vue-element-admin) 
