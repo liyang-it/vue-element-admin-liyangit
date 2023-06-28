@@ -17,6 +17,7 @@ Español | [English](./README.md) | [简体中文](./README.zh-CN.md) | [日本�
 
 * complemento para tablas big data
 
+## tipográfico
 - [Vista previa en línea](https://liyang-it.github.io/vue-admin-page)
 
 - [vue-element-admin Documentación oficial](https://github.com/PanJiaChen/vue-element-admin) 
