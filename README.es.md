@@ -2,21 +2,24 @@ Español | [English](./README.md) | [简体中文](./README.zh-CN.md) | [日本�
 
 ## Introducción
 
-**vue-element-admin-liyangit** es un framework front-end de administración de back-office, Está basada en [deelement-admin](https://panjiachen.github.io/vue-element-admin) y no cualquier modificación, sólo modificó la base del proyecto original de estilo, y soluciones de competencia caso menús dinámicos, El soporte de la aplicación PWA, la explicación de los comentarios del código de función, la eliminación de funciones inútiles, le permite comenzar rápidamente **vue-element-admin**, sólo ** vue2.x **
+**vue-element-admin-liyangit** es un framework front-end de administración de back-office. Se basa en [vue-element-admin](https://panjiachen.github.io/vue-element-admin) no modifica ninguna funcionalidad, solo el estilo básico del proyecto original, así como la solución de casos de permisos de menú dinámico en el extremo anterior y posterior, El soporte de la aplicación PWA, la explicación de los comentarios del código de función y la eliminación de las funciones inútiles le permiten comenzar rápidamente con vue-element-admin. Vue2.x sólo es compatible
 
- 
 
-- [Vista Prévia de la Aplicación](https://panjiachen.github.io/vue-element-admin)
+* modificar el estilo base del proyecto original
 
-- [Documentación](https://panjiachen.github.io/vue-element-admin-site/)
+* solución de caso de permiso de menú dinámico delantero y trasero
 
-- [Canal de Gitter](https://gitter.im/vue-element-admin/discuss)
+* soporte de aplicación PWA
 
-- [Para Donaciones](https://panjiachen.github.io/vue-element-admin-site/donate/)
+* explicación de comentarios de código de función
 
-- [Enlace de Wiki](https://github.com/PanJiaChen/vue-element-admin/wiki)
+* funciones inútiles eliminadas
 
-- [Canal de Gitee](https://panjiachen.gitee.io/vue-element-admin/)
+* complemento para tablas big data
+
+- [Vista previa en línea](https://liyang-it.github.io/vue-admin-page)
+
+- [vue-element-admin Documentación oficial](https://github.com/PanJiaChen/vue-element-admin) 
 
 
 ## Iniciando
