@@ -36,7 +36,7 @@
               {{ $t('navbar.dashboard') }}
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://liyang-it.github.io/vue-admin-page/">
+          <a target="_blank" href="https://github.com/liyang-it/vue-element-admin-liyangit">
             <el-dropdown-item>
               {{ $t('navbar.github') }}
             </el-dropdown-item>
