@@ -1,0 +1,2 @@
+如果打包出来运行，浏览器并没有检测到PWA 应用，请检查 dist文件夹下 `precache-manifest.`开头的文件，打开它，搜索 `run` 关键字，将这个对象内容删除掉
+如果还是不能解决，请检查 registerServiceWorker.js、manifest.json 是否配置正确、以及
