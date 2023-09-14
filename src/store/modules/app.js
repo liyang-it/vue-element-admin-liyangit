@@ -8,7 +8,8 @@ const state = {
   },
   device: 'desktop',
   language: getLanguage(),
-  size: Cookies.get('size') || 'medium'
+  size: Cookies.get('size') || 'medium',
+  zoom: localStorage.getItem('zoom') || 0.9 // 页面缩放比例 取值范围 0.5 到 2, 默认 1
 }
 
 const mutations = {
@@ -36,6 +37,11 @@ const mutations = {
   SET_SIZE: (state, size) => {
     state.size = size
     Cookies.set('size', size)
+  },
+  SET_ZOOM: (state, zoom) => {
+    state.zoom = zoom
+    // 同时保存到 本地 cookie / localStore
+    localStorage.setItem('zoom', zoom)
   }
 }
 
@@ -54,6 +60,9 @@ const actions = {
   },
   setSize({ commit }, size) {
     commit('SET_SIZE', size)
+  },
+  setZoom({ commit }, zoom) {
+    commit('SET_ZOOM', zoom)
   }
 }
 

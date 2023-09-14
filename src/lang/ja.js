@@ -171,7 +171,8 @@ export default {
     theme: 'テーマ色',
     tagsView: 'Tags-View 開く',
     fixedHeader: 'Fixed Header',
-    sidebarLogo: 'Sidebar Logo'
+    sidebarLogo: 'Sidebar Logo',
+    topMenu: 'トップメニュー '
   },
   vxeTablePage: {
     text1: 'ここではいくつかの基本機能のみをデモします。プラグインはvxe-tableを使用しています。公式サイトを見ると他のコンポーネントを見ることができます这里只演示几个基本功能，插件使用的是 vxe-table，进入官网查看更多组件',

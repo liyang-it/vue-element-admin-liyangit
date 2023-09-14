@@ -25,9 +25,30 @@ import * as filters from './filters' // global filters
  */
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
-
 Vue.use(VXETable)
 
+/**
+ * 本地缓存不使用 LocalStore存储，使用 IndexDB存储, 引入 封装好的 IndexDB操作类库
+ * 官网: https://localforage.github.io/localForage/#installation
+ */
+import localforage from 'localforage'
+// 创建一个 IndexDB 数据库
+const localDb = localforage.createInstance({
+  name: 'localDb'
+})
+
+// 把 localforage 和 IndexDB数据库挂载到Vue全局实例中
+Vue.prototype.$localforage = localforage
+
+Vue.prototype.$localDb = localDb
+
+console.info('本地IndexDB数据库挂载到Vue实例完成')
+console.info('使用 this.$localDb.setItem() 或者 Vue.prototype.$localDb.setItem() 存储内容 ')
+console.info('使用 this.$localforage 或者 Vue.prototype.$localforage 操作IndexDB ')
+
+// 引入 基础资料缓存加载
+import { init } from '@/dict/initDict'
+init()
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api

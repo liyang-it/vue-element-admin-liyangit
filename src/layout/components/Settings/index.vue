@@ -26,6 +26,10 @@
         <span>菜单支持拼音搜索</span>
         <el-switch v-model="supportPinyinSearch" class="drawer-switch" />
       </div>
+      <div class="drawer-item">
+        <span>{{ $t('settings.topMenu') }}</span>
+        <el-switch v-model="topMenu" class="drawer-switch" />
+      </div>
 
     </div>
   </div>
@@ -42,6 +46,17 @@ export default {
   computed: {
     isShowJob() {
       return this.$store.getters.language === 'zh'
+    },
+    topMenu: {
+      get() {
+        return this.$store.state.settings.topMenu
+      },
+      set(val) {
+        this.$store.dispatch('settings/changeSetting', {
+          key: 'topMenu',
+          value: val
+        })
+      }
     },
     fixedHeader: {
       get() {

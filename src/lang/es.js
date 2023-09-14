@@ -171,7 +171,8 @@ export default {
     theme: 'Theme Color',
     tagsView: 'Open Tags-View',
     fixedHeader: 'Fixed Header',
-    sidebarLogo: 'Sidebar Logo'
+    sidebarLogo: 'Sidebar Logo',
+    topMenu: 'Top Menu'
   },
   vxeTablePage: {
     text1: 'Aquí se muestran sólo algunas características básicas. El plugin utiliza vxe-table. Vaya a la página web oficial para ver más componentes',

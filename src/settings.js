@@ -20,6 +20,11 @@ module.exports = {
   fixedHeader: false,
 
   /**
+   * 顶部菜单
+   */
+  topMenu: true,
+
+  /**
    * @type {boolean} true | false
    * @description Whether show the logo in sidebar
    */

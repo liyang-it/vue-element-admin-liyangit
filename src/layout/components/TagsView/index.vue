@@ -105,6 +105,10 @@ export default {
       }
     },
     addTags() {
+      // 当前打开的 页面对象, 存入到 vuex，用于后期获取
+      // const nowPath = this.$route.path
+      this.$store.dispatch('tagsView/setNowView', this.$route)
+      // console.info('当前页面路径', nowPath)
       const { name } = this.$route
       if (name) {
         this.$store.dispatch('tagsView/addView', this.$route)

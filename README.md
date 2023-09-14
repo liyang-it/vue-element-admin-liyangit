@@ -4,6 +4,8 @@ English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Spa
 
 **vue-element-admin-liyangit** is a back-end management front-end framework, It is based on [vue-element-admin](https://panjiachen.github.io/vue-element-admin) does not change any function, just changed the style, as well as front end the basis of the original project dynamic menu access case solution, PWA application support, function code annotation, delete useless functions, can let you quickly get started **vue-element-admin**, only support **vue2.X**
 
+* Top menu can be switched on and off
+
 * Modify the base style of the original project
 
 * Front and back end dynamic menu permission case solution
@@ -15,6 +17,8 @@ English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Spa
 * Deleted useless features
 
 * Big data table plugin
+
+* Tauri desktop application deployment
 
 ## Preview
 - [Online preview](https://liyang-it.github.io/vue-admin-page)

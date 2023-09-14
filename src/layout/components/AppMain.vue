@@ -1,5 +1,6 @@
 <template>
-  <section class="app-main">
+  <!-- style样式为了兼容 同时开启 顶部菜单和固定head头 产生的样式问题 --->
+  <section class="app-main" :style="paddingTop">
     <transition name="fade-transform" mode="out-in">
       <keep-alive :include="cachedViews">
         <router-view :key="key" />
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'AppMain',
   computed: {
@@ -17,6 +19,21 @@ export default {
     },
     key() {
       return this.$route.path
+    },
+    paddingTop() {
+      // 兼容 开启顶部菜单和开启固定head造成的样式问题, 顶部head组件页面请参考: src\layout\index.vue
+      if (this.$store.state.settings.topMenu && this.$store.state.settings.fixedHeader) {
+        // 当 同时开启 顶部菜单和固定head, 主要内容 往下偏移避免被遮挡
+        return { 'padding-top': '100px' }
+      } else if (!this.$store.state.settings.topMenu && this.$store.state.settings.fixedHeader) {
+        // 当 关闭顶部菜单，开启 固定head, 主要内容 往下偏移避免被遮挡
+        return { 'padding-top': '60px' }
+      } else if (this.$store.state.settings.topMenu && !this.$store.state.settings.fixedHeader) {
+        // 当 开启顶部菜单，关闭 固定head, 主要内容 往下偏移避免被遮挡
+        return { 'padding-top': '20px' }
+      } else {
+        return ''
+      }
     }
   }
 }

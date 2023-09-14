@@ -4,6 +4,9 @@ const state = {
 }
 
 const mutations = {
+  SET_NOW_VIEW: (state, nowView) => {
+    state.nowView = nowView
+  },
   ADD_VISITED_VIEW: (state, view) => {
     if (state.visitedViews.some(v => v.path === view.path)) return
     state.visitedViews.push(
@@ -67,6 +70,9 @@ const mutations = {
 }
 
 const actions = {
+  setNowView({ commit }, value) {
+    commit('SET_NOW_VIEW', value)
+  },
   addView({ dispatch }, view) {
     dispatch('addVisitedView', view)
     dispatch('addCachedView', view)

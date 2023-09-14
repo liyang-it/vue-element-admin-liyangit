@@ -4,12 +4,14 @@
 
  **vue-element-admin-liyangit** 是一个后台管理前端框架，它基于 [vue-element-admin](https://panjiachen.github.io/vue-element-admin)  并没有修改任何功能，只是修改了 原项目的基础样式、以及 前后端动态菜单权限案例解决方案，PWA应用支持、功能代码注释讲解、删除了无用功能，能让您快速上手 **vue-element-admin** ，仅支持 **vue2.X**
 
+ * 可开关顶部菜单
  * 修改原项目的基础样式
  * 前后端动态菜单权限案例解决方案
  * PWA应用支持
  * 功能代码注释讲解
  * 删除了无用功能
  * 大数据表格插件
+ * Tauri桌面应用部署
 
 ## 预览
 - [在线预览](https://liyang-it.github.io/vue-admin-page)
