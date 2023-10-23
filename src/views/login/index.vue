@@ -131,6 +131,7 @@ export default {
   created() {
     this.bottomFilingInformation = 'Copyright © 2022-' + this.nowDate.getFullYear() + ' 六点半投资有限公司. All rights reserved  <a @click="toRedirection("湘ICP备123123123123号-1")">湘ICP备123123123123号-1</a>'
     // window.addEventListener('storage', this.afterQRScan)
+    console.error('登录要实现自己后端的实例，请参考 mock/user.js 中的login、info测试接口返回数据格式')
   },
   mounted() {
     if (this.loginForm.username === '') {
