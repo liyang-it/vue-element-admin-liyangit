@@ -34,9 +34,9 @@ const actions = {
     const { username, password } = userInfo
     return new Promise((resolve, reject) => {
       login({ username: username.trim(), password: password }).then(response => {
-        const { data } = response
-        commit('SET_TOKEN', data.token)
-        setToken(data.token)
+        const token = response.data.tokenValue
+        commit('SET_TOKEN', token)
+        setToken(token)
         resolve()
       }).catch(error => {
         reject(error)
@@ -49,13 +49,36 @@ const actions = {
     return new Promise((resolve, reject) => {
       getInfo(state.token).then(response => {
         console.info('登录成功，请求后端获取info信息')
-        // 这里是登录成功后，拿到token请求后端获取当前用户的更多信息,可以进行登陆成功的后续操作，例如获取登录用户的动态菜单等
-        // 权限菜单逻辑 在 permission.js 文件中
-        // 实现动态菜单的简单思路
-        // 1、在登录成功后的这里，获取到后台返回当前用户的菜单json数据(参考 test-mtnu.txt)，将菜单json保存在vuex中，方便后续再 permission.js 中获取菜单
-        // 第二步请在 permission.js 查看
-        const { data } = response
 
+        // 这里是登录成功后，拿到token请求后端获取当前用户的更多信息,可以进行登陆成功的后续操作，例如获取登录用户的动态菜单等
+
+        // 如果 实现自己的登录逻辑，出现异常，请参考 mock/user.js 中的 login、info测试接口返回的格式
+
+        // 录入 mock info接口返回的参数是
+
+        const mockResponse = {
+          code: 200,
+          data: {
+            roles: ['admin'],
+            introduction: 'I am a super administrator',
+            avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+            name: 'Super Admin'
+          }
+        }
+
+        // 权限菜单逻辑 在 permission.js 文件中
+
+        // 实现动态菜单的简单思路
+
+        // 1、在登录成功后的这里，获取到后台返回当前用户的菜单json数据(参考 test-mtnu.txt)，将菜单json保存在vuex中，方便后续再 permission.js 中获取菜单
+
+        // 第二步请在 permission.js 查看
+
+        // const { data } = response
+
+        const { data } = mockResponse
+
+        console.info(data)
         if (!data) {
           reject('Verification failed, please Login again.')
         }
