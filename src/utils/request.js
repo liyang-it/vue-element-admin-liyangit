@@ -16,7 +16,7 @@ service.interceptors.request.use(
 
   config => {
     // do something before request is sent
-    console.info('使用请求工具')
+    console.info('请求头 Token设置，请检查 token参数名是否正确')
     // 在这里可以添加 请求头配置，token、等信息
     if (store.getters.token) {
       // let each request carry token
